@@ -9,6 +9,12 @@
         <link rel="stylesheet" href='./files/style.css'>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Boxicons for stars and arrows -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
         
     </head>
     <style>
@@ -45,6 +51,11 @@
     color: rgb(250, 1, 96);
   font-weight: bolder;
   }
+  .testimonial-slide img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
     </style>
     <body>
         
@@ -57,6 +68,7 @@
                 <a href="#Skills" style="--i:3">Skills</a>
                 <a href="#Projects" style="--i:4">Projects</a>
                 <a href="#Certificates" style="--i:4">Certificates</a>
+                  <a href="#Testimony" style="--i:4">Testimony</a></li>
                 <a href="#Contact" style="--i:5">Contact</a>
             </nav>
         </header>
@@ -75,12 +87,12 @@
                 </div>
 
                 <div class="home-sci">
-                    <a href="https://www.linkedin.com/in/midhun-v-s"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://instagram.com/midhun_021"style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://www.youtube.com/@Unlucky_Coder21"style="--i:9" target="_blank"><i class='bx bxl-youtube'></i></a>
-                    <a href="https://github.com/vsmidhun21"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/emmanuel-magallanes-0918312a1/"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <!-- <a href="https://instagram.com/midhun_021"style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a> -->
+                    <!-- <a href="https://www.youtube.com/@Unlucky_Coder21"style="--i:9" target="_blank"><i class='bx bxl-youtube'></i></a> -->
+                    <a href="https://github.com/mannix2000"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
                 </div>
-                <a href="file:///C:/Users/tech4ed%20tagbilaran%208/Downloads/EmmanuelLabuanMagallanesRESUME.pdf%20(1)%20(1).pdf" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
+                <a href="img/EMMANUEL MAGALLANES RESUME (10).pdf" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
             </div>
         </section>
 
@@ -282,6 +294,24 @@
           </div>
         </div>
 
+        <div class="row" style="flex: 1 1 45%; max-width: 500px; position: relative;">
+          <img src="./img/Drupal Projects.jpg" style="width: 100%; height: auto; border-radius: 10px;">
+          <div class="layer" style="position: absolute; bottom: 0; background: rgba(0,0,0,0.6); color: white; width: 100%; padding: 10px;">
+            
+            <p>Broadgrad is a modern, scalable e-commerce platform designed for both consumers and store admins. It provides an intuitive interface for browsing and purchasing products, with a robust backend for managing inventory, users, and transactions. The system supports real-time stock updates, order tracking, and payment gateway integration.</p>
+         
+          </div>
+        </div>
+
+          <div class="row" style="flex: 1 1 45%; max-width: 500px; position: relative;">
+          <img src="./img/medicare-websites.PNG" style="width: 100%; height: auto; border-radius: 10px;">
+          <div class="layer" style="position: absolute; bottom: 0; background: rgba(0,0,0,0.6); color: white; width: 100%; padding: 10px;">
+            
+            <p>The Medicare Clinic Website is a modern and responsive WordPress-based platform built for healthcare providers such as clinics, hospitals, and private practices. The project focuses on accessibility, functionality, and a clean user interface to ensure patients can easily find information, view services, and book appointments online.</p>
+         
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -331,33 +361,130 @@
             </div>
         </section>
 
-        <section id="Services">
-            <div class="project">
-                <div class="container">
-                    <h1 class="sub-title">My <span>Services</span></h1>
-                    <div class="prj-list">
-                        <div>
-                            <i class='bx bx-code' style="color: #00eeff;"></i>
-                            <h2>Web Development</h2>
-                            <p>Plan, create and code internet sites and web pages with modern and artful design.</p>
-                            
-                        </div>
-                        <div>
-                            <i class='bx bx-cube' style="color: #00eeff;"></i>
-                            <h2>UI / UX Design</h2>
-                            <p>Specialized in creating clean, artful design that are both intuitive and functional.</p>
-                            
-                        </div>
-                        <div>
-                            <i class='bx bxl-android' style="color: #00eeff;"></i>
-                            <h2>Software Development</h2>
-                            <p>Mobile application developer with knowledge of Java and Android Studio.</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
+
+    <section id="Testimony" class="py-16 bg-gray-900 text-white">
+  <div class="text-center">
+    <h2 class="text-3xl font-bold">What <span class="text-pink-500">Clients Say</span></h2>
+    <p class="mt-2 text-gray-400">A few words from people I've worked with</p>
+  </div>
+
+  <div class="relative max-w-4xl mx-auto mt-10 overflow-hidden">
+    <div class="flex transition-transform duration-500 ease-in-out testimonial-track">
+
+      <!-- Slide 1 -->
+      <div class="min-w-full px-6">
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg text-center">
+          <p class="italic text-gray-300">“Emmanuel was fantastic to work with. He delivered everything on time and went beyond expectations.”</p>
+          <div class="flex justify-center mt-4">
+            <img src="https://ui-avatars.com/api/?name=Anna+Reyes&background=ff0057&color=fff&size=128" alt="Anna Reyes" class="w-16 h-16 rounded-full object-cover">
+          </div>
+          <h4 class="mt-2 text-pink-500 font-semibold">Anna Reyes</h4>
+          <p class="text-gray-400 text-sm">Business Owner</p>
+          <div class="flex justify-center mt-2 text-yellow-400">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="min-w-full px-6">
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg text-center">
+          <p class="italic text-gray-300">“He built us a custom solution that fits our workflow. Very professional and skilled.”</p>
+          <div class="flex justify-center mt-4">
+            <img src="https://ui-avatars.com/api/?name=Jonathan+Cruz&background=ff0057&color=fff&size=128" alt="Jonathan Cruz" class="w-16 h-16 rounded-full object-cover">
+          </div>
+          <h4 class="mt-2 text-pink-500 font-semibold">Jonathan Cruz</h4>
+          <p class="text-gray-400 text-sm">Tech Startup Founder</p>
+          <div class="flex justify-center mt-2 text-yellow-400">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="min-w-full px-6">
+        <div class="bg-gray-800 rounded-xl p-6 shadow-lg text-center">
+          <p class="italic text-gray-300">“Helped us launch our ecommerce site smoothly. Great communication and attention to detail.”</p>
+          <div class="flex justify-center mt-4">
+            <img src="https://ui-avatars.com/api/?name=Maricel+Santos&background=ff0057&color=fff&size=128" alt="Maricel Santos" class="w-16 h-16 rounded-full object-cover">
+          </div>
+          <h4 class="mt-2 text-pink-500 font-semibold">Maricel Santos</h4>
+          <p class="text-gray-400 text-sm">E-commerce Manager</p>
+          <div class="flex justify-center mt-2 text-yellow-400">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Arrows -->
+    <button onclick="moveSlide(-1)" class="absolute top-1/2 left-3 transform -translate-y-1/2 bg-pink-500 text-white rounded-full p-2 hover:bg-pink-600">
+      <i class='bx bx-chevron-left text-2xl'></i>
+    </button>
+    <button onclick="moveSlide(1)" class="absolute top-1/2 right-3 transform -translate-y-1/2 bg-pink-500 text-white rounded-full p-2 hover:bg-pink-600">
+      <i class='bx bx-chevron-right text-2xl'></i>
+    </button>
+  </div>
+</section>
+
+
+    <section id="Services">
+  <div class="project">
+    <div class="container">
+      <h1 class="sub-title">My <span>Services</span></h1>
+      <div class="prj-list">
+
+        <div>
+          <i class='bx bx-code' style="color: #00eeff;"></i>
+          <h2>Web Development</h2>
+          <p>
+            I help businesses build responsive, high-performing websites that improve customer engagement, boost online visibility, and drive more leads through clean code and modern design.
+          </p>
+        </div>
+
+        <div>
+          <i class='bx bx-cube' style="color: #00eeff;"></i>
+          <h2>UI / UX Design</h2>
+          <p>
+            I design intuitive and user-centered interfaces that enhance user satisfaction, improve conversion rates, and reflect your brand's identity across all digital platforms.
+          </p>
+        </div>
+
+        <div>
+          <i class='bx bxl-android' style="color: #00eeff;"></i>
+          <h2>Software Development</h2>
+          <p>
+            I develop custom mobile and desktop applications tailored to your business needs—streamlining operations, automating workflows, and providing scalable solutions that save time and cost.
+          </p>
+        </div>
+
+        <div>
+          <i class='bx bx-spreadsheet' style="color: #00eeff;"></i>
+          <h2>Data Entry (Freelance)</h2>
+          <p>
+            I offer accurate and reliable data entry services to help businesses manage, organize, and digitize information efficiently—freeing up your time and ensuring data consistency across platforms.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
 
         <section class="contacts" id="Contact">

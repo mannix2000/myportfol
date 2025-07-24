@@ -17,3 +17,30 @@ window.addEventListener("scroll",() =>{
         toTop.classList.remove("active");
     }
 })
+ let currentSlide = 0;
+
+  function moveSlide(direction) {
+    const track = document.querySelector('.testimonial-track');
+    const slides = document.querySelectorAll('.testimonial-slide');
+    const totalSlides = slides.length;
+
+    currentSlide += direction;
+
+    if (currentSlide >= totalSlides) currentSlide = 0;
+    if (currentSlide < 0) currentSlide = totalSlides - 1;
+
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  // Auto-rotate every 5s
+  setInterval(() => moveSlide(1), 5000);
+   let slideIndex = 0;
+
+  function moveSlide(direction) {
+    const track = document.querySelector('.testimonial-track');
+    const slides = document.querySelectorAll('.testimonial-track > div');
+    slideIndex = (slideIndex + direction + slides.length) % slides.length;
+    track.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+
+  setInterval(() => moveSlide(1), 6000);
